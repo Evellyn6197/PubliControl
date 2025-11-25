@@ -1,0 +1,13 @@
+body, html{
+    height: 100%;
+}
+
+.form-container-login{
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.form-container-cadastro{
+    max-width: 400px;
+    padding: 1rem;
+}
