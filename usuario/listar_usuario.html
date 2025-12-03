@@ -19,7 +19,7 @@
                 return;
             }
             const id = marcados[0].value;
-            window.location.href = "campanha_editar.html";
+            window.location.href = "usuario_editar.html";
         }
 
         function excluir() {
@@ -34,11 +34,13 @@
             }
             const id = marcados[0].value;
             alert("Usuário excluido com sucesso!!");
-        }   
+        }     
     </script>
 </head>
 
+
 <body>
+
     <nav class="bg-warning navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="principal.html" class="text-dark navbar-brand">PubliControl</a>
@@ -59,30 +61,30 @@
                         Cadastros
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="listar_clientes.html">Clientes</a></li>
-                        <li><a class="dropdown-item" href="listar_usuario.html">Usuários</a></li>
-                        <li><a class="dropdown-item" href="listar_campanhas.html">Campanhas</a></li>
+                        <li><a class="dropdown-item" href="../cliente/listar_clientes.html">Clientes</a></li>
+                        <li><a class="dropdown-item" href="../usuario/listar_usuario.html">Usuários</a></li>
+                        <li><a class="dropdown-item" href="../campanha/listar_campanhas.html">Campanhas</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
+                    <a class="nav-link" href="../sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contato.html">Contato</a>
+                    <a class="nav-link" href="../contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Sair</a>
+                    <a class="nav-link" href="../login.html">Sair</a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    
     <main class="container-fluid d-flex flex-fill align-items-start justify-content-center py-4">
         <div class="card shadow p-4 w-100">
-            <h2 class="mb-4">Campanha - Listar</h1>
+            <h2 class="mb-4">Usuário - Listar</h1>
                 <div class="mb-3">
                     <button type="button" class="btn btn-warning me-2"
-                        onclick="window.location.href = 'incluir_campanha.html'">
+                        onclick="window.location.href = 'usuario_incluir.html'">
                         Incluir
                     </button>
                     <button type="button" class="btn btn-secondary me-2" onclick="javascript:editar();">
@@ -98,42 +100,34 @@
                             <th scope="col">
                                 <input type="checkbox" id="checkTodos">
                             </th>
-                            <th scope="col">Cliente</th>
-                            <th scope="col">Nome da Campanha</th>
-                            <th scope="col">Mídia</th>
-                            <th scope="col">Custo</th>
-                            <th scope="col">Resultados</th>
-                            <th scope="col">Alcance</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Perfil</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
                             <td><input type="checkbox" class="user-check" name="sel[]" value="1"></td>
-                            <td>Diego Cavalcante Mota</td>
-                            <td>Diego Serviços - Mês da Reforma</td>
-                            <td>Google Ads Rede de Pesquisa</td>
-                            <td>R$ 1.980,00</td>
-                            <td>87 solicitações de orçamento</td>
-                            <td>9.120 pessoas</td>
+                            <td>1</td>
+                            <td>Laura Mendes Ferreira</td>
+                            <td>LauraMferreira@example.com</td>
+                            <td>Administrador</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" class="user-check" name="sel[]" value="2"></td>
-                            <td>Geovanne Corrêa Almeida</td>
-                            <td>Promoção Semana do Cliente</td>
-                            <td>Facebook Ads</td>
-                            <td>R$ 1.150,00</td>
-                            <td>210 cliques, 18 vendas</td>
-                            <td>7.900 pessoas</td>
+                            <td>2</td>
+                            <td>Lucas Alcântara de Souza</td>
+                            <td>LucasdeSouza@example.com</td>
+                            <td>Usuário</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" class="user-check" name="sel[]" value="3"></td>
+                            <td>3</td>
                             <td>Maria Socorro Assunção</td>
-                            <td>Divulgação Consultório Maria.SA</td>
-                            <td>Instagram Ads (Stories + Feed)</td>
-                            <td>R$ 2.380,00</td>
-                            <td>520 visitas ao perfil</td>
-                            <td>22.300 pessoas</td>
+                            <td>MariaSocorro@example.com</td>
+                            <td>Cliente</td>
                         </tr>
                     </tbody>
                 </table>

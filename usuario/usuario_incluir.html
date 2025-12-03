@@ -14,44 +14,46 @@
         }
     </script>
 </head>
-<nav class="bg-warning navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a href="principal.html" class="text-dark navbar-brand">PubliControl</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="principal.html">Início</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Cadastros
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="listar_clientes.html">Clientes</a></li>
-                    <li><a class="dropdown-item" href="listar_usuario.html">Usuários</a></li>
-                    <li><a class="dropdown-item" href="listar_campanhas.html">Campanhas</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.html">Sair</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 <body class="bg-light min-vh-100 d-flex flex-column">
+
+    <nav class="bg-warning navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="principal.html" class="text-dark navbar-brand">PubliControl</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="principal.html">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Cadastros
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../cliente/listar_clientes.html">Clientes</a></li>
+                        <li><a class="dropdown-item" href="../usuario/listar_usuario.html">Usuários</a></li>
+                        <li><a class="dropdown-item" href="../campanha/listar_campanhas.html">Campanhas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <main id="principal" class="container-fluid flex-fill d-flex align-items-start justify-content-center py-4">
 
@@ -66,8 +68,7 @@
                         Voltar
                     </button>
 
-                    <button type="submit" class="btn btn-success me-2"
-                            onclick="javascript:salvar();">
+                    <button type="submit" class="btn btn-success me-2" onclick="javascript:salvar();">
                         Gravar
                     </button>
                 </div>
